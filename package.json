@@ -1,0 +1,29 @@
+{
+  "name": "node-babel",
+  "version": "1.0.0",
+  "description": "Setting up simple nodejs app with babel-preset-env",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "npm run clean && babel server -s -d dist",
+    "start": "npm run build && node ./dist/app.js"
+  },
+  "keywords": [
+    "Node",
+    "babel",
+    "babel-prest-env",
+    "ES2015+"
+  ],
+  "author": "Mbonu Basil",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.4",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
